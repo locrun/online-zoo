@@ -1,0 +1,127 @@
+.testimonials {
+  padding-top: 140px;
+  padding-bottom: 180px;
+  background-color: #fff;
+
+  &__title {
+    font-family: "Roboto-Regular";
+    font-weight: 400;
+    font-size: 36px;
+    color: #333b41;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  &__wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__user-review-card {
+    position: relative;
+    max-width: 268px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background: #f1f3f2;
+    border: 2px solid rgba(255, 105, 180, 0.5);
+    border-radius: 15px;
+    z-index: 1;
+  }
+
+  &__user-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+  }
+
+  &__user-icon {
+    float: left;
+    padding-top: 16px;
+    padding-right: 10px;
+  }
+
+  &__user-name {
+    font-family: "Roboto-Regular";
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    display: inline-block;
+  }
+  &__user-location {
+    font-family: "Roboto-Regular";
+    font-weight: 300;
+    font-size: 15px;
+    color: #bdbdbd;
+    display: inline-block;
+  }
+  &__user-comment {
+    font-family: "Roboto-Regular";
+    font-weight: 300;
+    font-size: 15px;
+    color: #767474;
+  }
+
+  &__btn-wrap {
+    display: flex;
+  }
+
+  &__leave-feedback-btn {
+    font-family: "Roboto-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 300px;
+    background: #f9804b;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.6s ease-out;
+  }
+
+  &__leave-feedback-btn:active {
+    background: #4b9200;
+  }
+  &__leave-feedback-btn:hover {
+    background: #4b9200;
+    transition: all 0.6s ease-out;
+  }
+}
+
+.leav-photo {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  @media (min-width: 1500px) {
+    background-image: url("/online-zoo/assets/images/leav_foto.png");
+  }
+}
+.line-csroll {
+  text-align: center;
+}
+
+.input-line-csroll {
+  height: 20px;
+  margin: 20px;
+  width: 600px;
+  border: 0.5px solid;
+  border-color: #fe9013;
+  appearance: none;
+  height: 8px;
+  left: calc(50% - 599px / 2 - 0.5px);
+  background: #f5f7f6;
+  border-radius: 5px;
+}
+
+.input-line-csroll::-webkit-slider-thumb {
+  cursor: pointer;
+  width: 115px;
+  height: 6px;
+  appearance: none;
+  background: #fe9013;
+  border-radius: 5px;
+}

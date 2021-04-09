@@ -1,0 +1,170 @@
+.feed-animals {
+  padding-top: 70px;
+  padding-bottom: 110px;
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  opacity: 0.9;
+
+  &__title {
+    font-family: "Roboto-Regular";
+    font-weight: 400;
+    font-size: 48px;
+    color: #fe9013;
+    text-align: center;
+  }
+
+  &__slogan {
+    padding-left: 90px;
+    font-family: "Roboto-Regular";
+    font-weight: 400;
+    font-size: 24px;
+    color: #333b41;
+    letter-spacing: 5;
+  }
+
+  &__covid-team {
+    padding-left: 90px;
+    display: inline-block;
+    font-family: "Roboto-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    color: #333b41;
+    margin-top: 8px;
+  }
+
+  &__subtitle {
+    max-width: 960px;
+    padding-left: 90px;
+    margin-top: 13px;
+    font-family: "Roboto-Regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #333b41;
+  }
+
+  &__link {
+    color: #333b41;
+    border-bottom: 1px solid #fe9013;
+    padding-bottom: 2px;
+  }
+
+  &__flex {
+    max-width: 775px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__widget {
+    max-width: 172px;
+    position: relative;
+  }
+  &__flex:after {
+    content: url("/online-zoo/assets/icons/right-arrow.svg");
+    position: absolute;
+    right: 65%;
+    top: 25%;
+  }
+  &__flex:before {
+    content: url("/online-zoo/assets/icons/right-arrow.svg");
+    position: absolute;
+    left: 65%;
+    top: 25%;
+  }
+
+  &__widget-title {
+    font-family: "Roboto-Regular";
+    font-size: 36px;
+    color: #333b41;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 45px;
+  }
+
+  &__widget-text {
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    color: #333b41;
+    margin-top: 33px;
+  }
+
+  &__icons {
+    display: inline-block;
+    padding: 55px 30px;
+    background-color: #fff;
+    border: 1px solid #fe9013;
+    border-radius: 5px;
+  }
+
+  &__icons--zoo {
+    display: inline-block;
+    padding: 34px 40px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    border: 1px solid #fe9013;
+    border-radius: 5px;
+  }
+
+  &__icons--monkey {
+    display: inline-block;
+    padding: 48px 22px;
+    background-color: #fff;
+    border: 1px solid #fe9013;
+    border-radius: 5px;
+  }
+  &__btn-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    font-family: "Roboto-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 20px 0px;
+    width: 300px;
+    text-align: center;
+    background: #f9804b;
+    border-radius: 25px;
+    transition: all 0.6s ease-out;
+  }
+  &__btn:active {
+    background: #4b9200;
+  }
+  &__btn:hover {
+    background: #4b9200;
+    transition: all 0.6s ease-out;
+  }
+}
+.bg-color {
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(4px);
+  border-radius: 17px;
+  padding-top: 45px;
+  padding-bottom: 60px;
+}

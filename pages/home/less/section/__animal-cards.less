@@ -1,0 +1,129 @@
+.animal-cards {
+  position: relative;
+  padding-bottom: 100px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .text-info {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 10;
+  }
+
+  &__item {
+    border: 1px solid #fe9013;
+    border-radius: 5px;
+    max-width: 366px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__img {
+    position: relative;
+    transition: all 0.6s ease-out;
+    z-index: 0;
+    display: block;
+  }
+
+  &__img:hover {
+    transform: scale(1.1);
+  }
+
+  &__name {
+    font-family: "Roboto-Medium";
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #000;
+    padding-left: 15px;
+    padding-top: 11px;
+  }
+  &__location {
+    font-family: "Roboto-Light";
+    font-size: 15px;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    position: relative;
+  }
+
+  &__food-icons {
+    position: absolute;
+    right: 13px;
+    bottom: 0;
+  }
+
+  &__btn {
+    font-family: "Roboto-Medium";
+    display: inline-block;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background: #fe9013;
+    text-transform: uppercase;
+    padding: 20px 0px;
+    width: 300px;
+    text-align: center;
+    margin-top: 60px;
+  }
+}
+
+.ornamental-plant {
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  @media (min-width: 1500px) {
+    background-image: url("/online-zoo/assets/images/strelitzia.png");
+  }
+}
+
+.palm {
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  @media (min-width: 1500px) {
+    background-image: url("/online-zoo/assets/images/palm_foto.png");
+  }
+}
+.arrow-left {
+  width: 62px;
+  height: 62px;
+  background: #f9804b;
+  position: absolute;
+  display: block;
+  top: 36.4%;
+  left: 15.3%;
+  background-image: url("/online-zoo/assets/icons/left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.arrow-left:hover {
+  background-color: rgb(243, 167, 104);
+}
+.arrow-right {
+  width: 62px;
+  height: 62px;
+  background: #f9804b;
+  position: absolute;
+  top: 36.4%;
+  right: 15.3%;
+  background-image: url("/online-zoo/assets/icons/right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.arrow-right:hover {
+  background-color: rgb(243, 167, 104);
+}
