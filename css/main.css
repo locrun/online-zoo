@@ -272,7 +272,7 @@ h3 {
 }
 @media (min-width: 1500px) {
   .ornamental-plant {
-    background-image: url("/assets/images/strelitzia.png");
+    background-image: url("../assets/images/strelitzia.png");
   }
 }
 .palm {
@@ -281,7 +281,7 @@ h3 {
 }
 @media (min-width: 1500px) {
   .palm {
-    background-image: url("/assets/images/palm_foto.png");
+    background-image: url("../assets/images/palm_foto.png");
   }
 }
 .arrow-left {
@@ -292,7 +292,7 @@ h3 {
   display: block;
   top: 36.4%;
   left: 15.3%;
-  background-image: url("/assets/icons/left.svg");
+  background-image: url("../assets/icons/left.svg");
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
@@ -309,7 +309,7 @@ h3 {
   position: absolute;
   top: 36.4%;
   right: 15.3%;
-  background-image: url("/assets/icons/right.svg");
+  background-image: url("../assets/icons/right.svg");
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
