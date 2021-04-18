@@ -1,35 +1,83 @@
 .animal-cards {
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media (min-width: 640px) {
+      justify-content: space-between;
+    }
+    @media (min-width: 1200px) {
+      max-width: 940px;
+      margin: 0 auto;
+    }
+    @media (min-width: 1600px) {
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+  }
+  .inner {
+    @media (min-width: 640px) {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 1160px;
+      display: flex;
+      justify-content: center;
+    }
   }
   .text-info {
     position: relative;
-    overflow: hidden;
     background-color: #fff;
-    z-index: 10;
   }
 
   &__item {
     border: 1px solid #fe9013;
     border-radius: 5px;
-    max-width: 366px;
+    max-width: 285px;
     margin-bottom: 18px;
     overflow: hidden;
+    display: block;
     position: relative;
+
+    @media (min-width: 640px) {
+      margin-bottom: 92px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 293px;
+      justify-content: space-around;
+    }
+    @media (min-width: 1600px) {
+      max-width: 366px;
+      margin-bottom: 18px;
+    }
+  }
+  &__item--none {
+    display: none;
+
+    @media (min-width: 1200px) {
+      display: block;
+    }
+  }
+  .sloth {
+    @media (min-width: 1200px) {
+      display: none;
+    }
+    @media (min-width: 1600px) {
+      display: block;
+    }
   }
 
   &__img {
-    position: relative;
-    transition: all 0.6s ease-out;
-    z-index: 0;
     display: block;
+    transition: all 0.6s ease-out;
   }
-
   &__img:hover {
     transform: scale(1.1);
   }
@@ -37,25 +85,46 @@
   &__name {
     font-family: "Roboto-Medium";
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 12px;
     color: #000;
     padding-left: 15px;
     padding-top: 11px;
+
+    @media (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
   &__location {
     font-family: "Roboto-Light";
-    font-size: 15px;
+    font-size: 11px;
     color: #000;
     margin-top: 0;
     margin-bottom: 15px;
     padding-left: 15px;
     position: relative;
+    @media (min-width: 1200px) {
+      font-size: 15px;
+    }
   }
 
   &__food-icons {
     position: absolute;
-    right: 13px;
+    right: 6px;
     bottom: 0;
+    width: 37px;
+    height: 29px;
+
+    @media (min-width: 640px) {
+      width: 48px;
+      height: 38px;
+      right: 13px;
+    }
+  }
+
+  &__btn-wrapper {
+    @media (min-width: 600px) {
+      text-align: center;
+    }
   }
 
   &__btn {
@@ -73,8 +142,17 @@
     padding: 20px 0px;
     width: 300px;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 10px;
     transition: all 0.6s ease-out;
+    letter-spacing: 1px;
+
+    @media (min-width: 640px) {
+      margin-top: -60px;
+    }
+
+    @media (min-width: 1600px) {
+      margin-top: 60px;
+    }
   }
 
   &__btn:hover {
@@ -86,7 +164,17 @@
 .ornamental-plant {
   background-repeat: no-repeat;
   background-position: bottom right;
-  @media (min-width: 1500px) {
+
+  background-image: url("/assets/images/little-strelitzia.png");
+
+  @media (min-width: 640px) {
+    background-image: url("/assets/images/middle-strelitzia.png");
+  }
+  @media (min-width: 1200px) {
+    background-image: url("/assets/images/small-strelitzia.png");
+  }
+
+  @media (min-width: 1600px) {
     background-image: url("../assets/images/strelitzia.png");
   }
 }
@@ -94,42 +182,82 @@
 .palm {
   background-repeat: no-repeat;
   background-position: bottom left;
-  @media (min-width: 1500px) {
-    background-image: url("../assets/images/palm_foto.png");
+  background-image: url("/assets/images/little-palm.png");
+
+  @media (min-width: 640px) {
+    background-image: url("/assets/images/middle-palm.png");
+    padding-bottom: 100px;
+  }
+  @media (min-width: 1200px) {
+    background-image: url("/assets/images/small-palm.png");
+    padding-bottom: 140px;
+  }
+  @media (min-width: 1600px) {
+    background-image: url("../assets/images/palm-foto.png");
+    padding-bottom: 100px;
   }
 }
-.arrow-left {
-  width: 62px;
-  height: 62px;
-  background: #f9804b;
-  position: absolute;
+
+@media (min-width: 1600px) {
+  .d-none {
+    display: none;
+  }
+}
+
+.inner:after {
+  content: "";
   display: block;
-  top: 36.4%;
-  left: 15.3%;
-  background-image: url("../assets/icons/left.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #fff;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.arrow-left:hover {
-  background-color: rgb(243, 167, 104);
-}
-.arrow-right {
+  position: absolute;
+  background: #f9804b;
   width: 62px;
   height: 62px;
-  background: #f9804b;
-  position: absolute;
-  top: 36.4%;
-  right: 15.3%;
-  background-image: url("../assets/icons/right.svg");
+  background-image: url("/assets/icons/left.svg");
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
   border-radius: 50%;
   cursor: pointer;
+  display: none;
+  @media (min-width: 640px) {
+    display: block;
+    top: 41%;
+    left: 37.2%;
+  }
+  @media (min-width: 1200px) {
+    top: 41.3%;
+    left: 37.4%;
+  }
+  @media (min-width: 1600px) {
+    top: 45.5%;
+    left: -7%;
+  }
 }
-.arrow-right:hover {
-  background-color: rgb(243, 167, 104);
+
+.inner:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #f9804b;
+  width: 62px;
+  height: 62px;
+  background-image: url("/assets/icons/right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  @media (min-width: 640px) {
+    display: block;
+    top: 41%;
+    right: 37.2%;
+  }
+  @media (min-width: 1200px) {
+    top: 41.3%;
+    right: 37.3%;
+  }
+
+  @media (min-width: 1600px) {
+    top: 45.5%;
+    right: -7%;
+  }
 }

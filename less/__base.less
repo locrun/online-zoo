@@ -4,6 +4,10 @@ body {
 * {
   box-sizing: border-box;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 a {
   text-decoration: none;
@@ -13,8 +17,26 @@ h2,
 h3 {
   margin: 0;
 }
+.wrapper {
+  background: #111115;
+}
 .container {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
+
+  @media (min-width: 640px) {
+    padding: 0 20px;
+  }
+  @media (min-width: 1200px) {
+    padding: 0;
+  }
+}
+.inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  position: relative;
+}
+.none {
+  display: none;
 }

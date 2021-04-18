@@ -10,52 +10,54 @@
   </head>
   <body>
     <!--// Header -->
-    <header class="header">
-      <div class="container">
-        <div class="flex-box">
-          <a class="logo" href="#">
-            <div class="logo__img">
-              <img src="assets/icons/logo.svg" alt="logo icon" />
-            </div>
-            <h1 class="logo__text">PetStroy online</h1>
-          </a>
-          <nav>
-            <ul class="nav">
-              <li class="nav__item">
-                <a class="nav__item-link active" href="#">About</a>
-              </li>
-              <li class="nav__item">
-                <a
-                  class="nav__item-link"
-                  href="../map/index.html"
-                  target="blank"
-                  >Map</a
-                >
-              </li>
-              <li class="nav__item">
-                <a
-                  class="nav__item-link"
-                  href="../zoos/index.html"
-                  target="blank"
-                  >Zoos</a
-                >
-              </li>
-              <li class="nav__item">
-                <a class="nav__item-link" href="#">Contact us</a>
-              </li>
-              <li class="nav__item">
-                <a
-                  class="nav__item-link"
-                  href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
-                  target="blank"
-                  >Designed by @</a
-                >
-              </li>
-            </ul>
-          </nav>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="flex-box">
+            <a class="logo" href="#">
+              <div class="logo__img">
+                <img src="assets/icons/logo.svg" alt="logo icon" />
+              </div>
+              <h1 class="logo__text">PetStroy online</h1>
+            </a>
+            <nav>
+              <ul class="nav">
+                <li class="nav__item">
+                  <a class="nav__item-link active" href="#">About</a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="nav__item-link"
+                    href="../map/index.html"
+                    target="blank"
+                    >Map</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="nav__item-link"
+                    href="../zoos/index.html"
+                    target="blank"
+                    >Zoos</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="nav__item-link" href="#">Contact us</a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="nav__item-link"
+                    href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+                    target="blank"
+                    >Designed by @</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
     <!-- Header //-->
     <main>
       <!--// top-section -->
@@ -79,7 +81,7 @@
                 class="top-section__btn"
                 href="../zoos/index.html"
                 target="blank"
-                >wath online</a
+                >watch online</a
               >
             </div>
           </div>
@@ -87,153 +89,194 @@
       </section>
       <!-- top-section //-->
       <!--// Features -->
-      <section class="features flower">
-        <div class="container">
-          <div class="features__content">
-            <div class="features__img">
-              <img
-                src="assets/images/bamboo-cap.jpg"
-                alt="
+      <div class="flower">
+        <section class="features">
+          <div class="container">
+            <div class="features__content">
+              <div class="features__img">
+                <img
+                  class="cap-small"
+                  src="assets/images/bamboo-cap-small.jpg"
+                  alt="
               grandfather bamboo"
-              />
-            </div>
-            <div class="features__text-content">
-              <h3 class="features__title">
-                The Backstage of the Wilderness World.
-              </h3>
-              <p class="features__subtitle">
-                The site was founded on the basis of a volunteer movement to
-                protect and care for animals.
-              </p>
-              <h4 class="features__desc-title">How it works</h4>
-              <p class="features__desc-subtitle">
-                The main goal is to help the animals, as well as the nature
-                reserves and zoos where they are kept. We are currently working
-                on video projects targeting pandas in China, eagles on an island
-                near Los Angeles, alligators in Florida and gorillas in the
-                Congo. These have a total of more than 1,500 mammals and
-                reptiles.
-              </p>
+                />
+                <img
+                  class="cap-big"
+                  src="assets/images/bamboo-cap-desc.jpg"
+                  alt="
+              grandfather bamboo"
+                />
+              </div>
+              <a class="features__btn" href="../zoos/index.html" target="blank"
+                >wath online</a
+              >
+              <div class="features__text-content">
+                <h3 class="features__title">
+                  The Backstage of the Wilderness World.
+                </h3>
+                <p class="features__subtitle">
+                  The site was founded on the basis of a volunteer movement to
+                  protect and care for animals.
+                </p>
+                <h4 class="features__desc-title">How it works</h4>
+                <p class="features__desc-subtitle">
+                  The main goal is to help the animals, as well as the nature
+                  reserves and zoos where they are kept. We are currently
+                  working on video projects targeting pandas in China, eagles on
+                  an island near Los Angeles, alligators in Florida and gorillas
+                  in the Congo. These have a total of more than 1,500 mammals
+                  and reptiles.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <!-- Features //-->
       <!--// Cards -->
       <div class="ornamental-plant">
         <section class="animal-cards palm">
           <div class="container">
-            <div class="animal-cards__wrapper">
-              <div class="animal-cards__item">
-                <img
-                  class="animal-cards__img"
-                  src="assets/images/panda.jpg"
-                  alt="panda"
-                />
-                <div class="text-info">
-                  <h3 class="animal-cards__name">Giant Pandas</h3>
-                  <p class="animal-cards__location">
-                    Native to Southwest China
+            <div class="inner">
+              <div class="animal-cards__wrapper">
+                <div class="animal-cards__item">
+                  <div class="animal-cards__img-wrapper">
                     <img
-                      class="animal-cards__food-icons"
-                      src="assets/icons/banana-bamboo_icon.svg"
-                      alt="banana-bamboo_icon"
+                      class="animal-cards__img"
+                      src="assets/images/panda.jpg"
+                      alt="panda"
                     />
-                  </p>
+                  </div>
+                  <div class="text-info">
+                    <h3 class="animal-cards__name">Giant Pandas</h3>
+                    <p class="animal-cards__location">
+                      Native to Southwest China
+                      <img
+                        class="animal-cards__food-icons"
+                        src="assets/icons/banana-bamboo_icon.svg"
+                        alt="banana-bamboo_icon"
+                      />
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="animal-cards__item">
-                <img
-                  class="animal-cards__img"
-                  src="assets/images/eagle.jpg"
-                  alt="eagle"
-                />
-                <div class="text-info">
-                  <h3 class="animal-cards__name">Eagles</h3>
-                  <p class="animal-cards__location">
-                    Native to South America
-                    <img
-                      class="animal-cards__food-icons"
-                      src="assets/icons/meet-fish_icon.svg"
-                      alt="meet-fish_icon"
-                    />
-                  </p>
-                </div>
-              </div>
-              <div class="animal-cards__item">
-                <img
-                  class="animal-cards__img"
-                  src="assets/images/monkey.jpg"
-                  alt="monkey"
-                />
-                <div class="text-info">
-                  <h3 class="animal-cards__name">Gorillas</h3>
-                  <p class="animal-cards__location">
-                    Native to Congo
-                    <img
-                      class="animal-cards__food-icons"
-                      src="assets/icons/banana-bamboo_icon.svg"
-                      alt="banana-bamboo_icon"
-                    />
-                  </p>
-                </div>
-              </div>
-              <div class="animal-cards__item">
-                <img
-                  class="animal-cards__img"
-                  src="assets/images/sloth.jpg"
-                  alt="sloth"
-                />
-                <div class="text-info">
-                  <h3 class="animal-cards__name">Two-Toed Sloth</h3>
-                  <p class="animal-cards__location">
-                    Mesoamerica, South America
-                    <img
-                      class="animal-cards__food-icons"
-                      src="assets/icons/banana-bamboo_icon.svg"
-                      alt="banana-bamboo_icon"
-                    />
-                  </p>
-                </div>
-              </div>
-              <div class="animal-cards__item">
-                <img
-                  class="animal-cards__img"
-                  src="assets/images/leopard.jpg"
-                  alt="leopard"
-                />
-                <div class="text-info">
-                  <h3 class="animal-cards__name">Cheetahs</h3>
-                  <p class="animal-cards__location">
-                    Native to Africa
-                    <img
-                      class="animal-cards__food-icons"
-                      src="assets/icons/meet-fish_icon.svg"
-                      alt="meet-fish_icon"
-                    />
-                  </p>
-                </div>
-              </div>
-              <div class="animal-cards__item">
-                <div class="animal-cards__pic-wrap">
+                <div class="animal-cards__item">
                   <img
                     class="animal-cards__img"
-                    src="assets/images/penguin.jpg"
-                    alt="penguin"
+                    src="assets/images/eagle.jpg"
+                    alt="eagle"
                   />
+                  <div class="text-info">
+                    <h3 class="animal-cards__name">Eagles</h3>
+                    <p class="animal-cards__location">
+                      Native to South America
+                      <img
+                        class="animal-cards__food-icons"
+                        src="assets/icons/meet-fish_icon.svg"
+                        alt="meet-fish_icon"
+                      />
+                    </p>
+                  </div>
                 </div>
-                <div class="text-info">
-                  <h3 class="animal-cards__name">Penguins</h3>
-                  <p class="animal-cards__location">
-                    Native to Antarctica
+                <div class="animal-cards__item">
+                  <img
+                    class="animal-cards__img"
+                    src="assets/images/monkey.jpg"
+                    alt="monkey"
+                  />
+
+                  <div class="text-info">
+                    <h3 class="animal-cards__name">Gorillas</h3>
+                    <p class="animal-cards__location">
+                      Native to Congo
+                      <img
+                        class="animal-cards__food-icons"
+                        src="assets/icons/banana-bamboo_icon.svg"
+                        alt="banana-bamboo_icon"
+                      />
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="animal-cards__item none animal-cards__item--none sloth"
+                >
+                  <img
+                    class="animal-cards__img"
+                    src="assets/images/sloth.jpg"
+                    alt="sloth"
+                  />
+                  <div class="text-info">
+                    <h3 class="animal-cards__name">Two-Toed Sloth</h3>
+                    <p class="animal-cards__location">
+                      Mesoamerica, South America
+                      <img
+                        class="animal-cards__food-icons"
+                        src="assets/icons/banana-bamboo_icon.svg"
+                        alt="banana-bamboo_icon"
+                      />
+                    </p>
+                  </div>
+                </div>
+                <div class="animal-cards__item animal-cards__item--none">
+                  <img
+                    class="animal-cards__img"
+                    src="assets/images/leopard.jpg"
+                    alt="leopard"
+                  />
+                  <div class="text-info">
+                    <h3 class="animal-cards__name">Cheetahs</h3>
+                    <p class="animal-cards__location">
+                      Native to Africa
+                      <img
+                        class="animal-cards__food-icons"
+                        src="assets/icons/meet-fish_icon.svg"
+                        alt="meet-fish_icon"
+                      />
+                    </p>
+                  </div>
+                </div>
+                <div class="animal-cards__item animal-cards__item--none">
+                  <div class="animal-cards__pic-wrap">
                     <img
-                      class="animal-cards__food-icons"
-                      src="assets/icons/meet-fish_icon.svg"
-                      alt="meet-fish_ico"
+                      class="animal-cards__img"
+                      src="assets/images/penguin.jpg"
+                      alt="penguin"
                     />
-                  </p>
+                  </div>
+                  <div class="text-info">
+                    <h3 class="animal-cards__name">Penguins</h3>
+                    <p class="animal-cards__location">
+                      Native to Antarctica
+                      <img
+                        class="animal-cards__food-icons"
+                        src="assets/icons/meet-fish_icon.svg"
+                        alt="meet-fish_ico"
+                      />
+                    </p>
+                  </div>
+                </div>
+                <div class="animal-cards__item d-none">
+                  <div class="animal-cards__pic-wrap">
+                    <img
+                      class="animal-cards__img"
+                      src="assets/images/crocodile.jpg"
+                      alt="crocodile"
+                    />
+                  </div>
+                  <div class="text-info">
+                    <h3 class="animal-cards__name">Alligators</h3>
+                    <p class="animal-cards__location">
+                      Native to Southeastern United States
+                      <img
+                        class="animal-cards__food-icons"
+                        src="assets/icons/meet-fish_icon.svg"
+                        alt="meet-fish_ico"
+                      />
+                    </p>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="animal-cards__btn-wrapper">
               <a
                 class="animal-cards__btn"
                 href="/online-zoo/pages/map/index.html"
@@ -241,65 +284,68 @@
                 >choose your favorite</a
               >
             </div>
-            <span class="arrow-left"></span>
-            <span class="arrow-right"></span>
           </div>
         </section>
       </div>
       <!-- Cards //-->
       <section class="feed-animals">
         <div class="container bg-color">
-          <h2 class="feed-animals__title">Pick and feed a friend</h2>
-          <h4 class="feed-animals__slogan">
-            We know the animals bring you joy, and in these extraordinary times,
-            we’re glad.
-          </h4>
-          <strong class="feed-animals__covid-team"
-            >During a time when the COVID-19 epidemic is touching all of our
-            lives, we’re proud and glad that people around the world find joy in
-            PatStory.</strong
-          >
-          <p class="feed-animals__subtitle">
-            Even though the zoo has reopened, we need you now more than ever to
-            help us deal with these problems. Please consider a gift to our
-            <a
-              class="feed-animals__link"
-              href="/online-zoo/pages/donations/index.html"
-              target="blank"
-              >Emergency Support Fund .</a
-            >
-          </p>
-          <h2 class="feed-animals__widget-title">How it works</h2>
-          <div class="feed-animals__flex">
-            <div class="feed-animals__widget">
-              <div class="feed-animals__icons">
-                <img src="assets/icons/pay.svg" alt="pay" />
-              </div>
-              <p class="feed-animals__widget-text">Pay with card</p>
-            </div>
-            <div class="feed-animals__widget">
-              <div class="feed-animals__icons--zoo">
-                <img src="assets/icons/zoo.svg" alt="zoo" />
-              </div>
-              <p class="feed-animals__widget-text">Payment goes to the zoo</p>
-            </div>
-            <div class="feed-animals__widget">
-              <div class="feed-animals__icons--monkey">
-                <img src="assets/icons/monkey.svg" alt="monkey" />
-              </div>
-              <p class="feed-animals__widget-text">
-                Your favourite animal gets delicious dish
+          <div class="arrow-wrapper">
+            <h2 class="feed-animals__title">Pick and feed a friend</h2>
+            <div class="text-wrapper">
+              <h4 class="feed-animals__slogan">
+                We know the animals bring you joy, and in these extraordinary
+                times, we’re glad.
+              </h4>
+              <strong class="feed-animals__covid-team"
+                >During a time when the COVID-19 epidemic is touching all of our
+                lives, we’re proud and glad that people around the world find
+                joy in PatStory.</strong
+              >
+              <p class="feed-animals__subtitle">
+                Even though the zoo has reopened, we need you now more than ever
+                to help us deal with these problems. Please consider a gift to
+                our
+                <a
+                  class="feed-animals__link"
+                  href="/online-zoo/pages/donations/index.html"
+                  target="blank"
+                  >Emergency Support Fund .</a
+                >
               </p>
             </div>
-          </div>
-          <div class="feed-animals__btn-wrap">
-            <a href="#" class="feed-animals__btn"> Feed a friend now </a>
+            <h2 class="feed-animals__widget-title">How it works</h2>
+            <div class="feed-animals__flex">
+              <div class="feed-animals__widget feed-animals__widget--mb">
+                <div class="feed-animals__icons--pay">
+                  <img src="assets/icons/pay.svg" alt="pay" />
+                </div>
+                <p class="feed-animals__widget-text">Pay with card</p>
+              </div>
+              <div class="feed-animals__widget">
+                <div class="feed-animals__icons--zoo">
+                  <img src="assets/icons/zoo.svg" alt="zoo" />
+                </div>
+                <p class="feed-animals__widget-text">Payment goes to the zoo</p>
+              </div>
+              <div class="feed-animals__widget">
+                <div class="feed-animals__icons--monkey">
+                  <img src="assets/icons/monkey.svg" alt="monkey" />
+                </div>
+                <p class="feed-animals__widget-text">
+                  Your favourite animal gets delicious dish
+                </p>
+              </div>
+            </div>
+            <div class="feed-animals__btn-wrap">
+              <a href="#" class="feed-animals__btn"> Feed a friend now </a>
+            </div>
           </div>
         </div>
       </section>
       <section class="testimonials leav-photo">
         <h2 class="testimonials__title">Testimonials</h2>
-        <div class="container">
+        <div class="container container--padding-no">
           <div class="testimonials__wrapper">
             <div class="testimonials__user-review-card">
               <img
@@ -315,7 +361,7 @@
               </div>
               <p class="testimonials__user-comment">
                 The best online zoo I’ve met. My son delighted very much ljves
-                to watch gouillas. Online zoo is one jf the ways to instill a
+                to watch... gouillas. Online zoo is one jf the ways to instill a
                 love for animals.The best online zoo I’ve met. My son delighted
                 very much ljves to watch gouillas. Online zoo is one jf the ways
                 to instill a love for animals. The best online zoo I’ve met. My
@@ -326,7 +372,9 @@
                 animals.
               </p>
             </div>
-            <div class="testimonials__user-review-card">
+            <div
+              class="testimonials__user-review-card testimonials__user-review-card--d-none"
+            >
               <img
                 class="testimonials__user-icon"
                 src="assets/images/oskar.png"
@@ -363,8 +411,8 @@
                 >
               </div>
               <p class="testimonials__user-comment">
-                The best online zoo I’ve met. My son delighted very much ljves
-                to watch gouillas. Online zoo is one jf the wa ys to instill a
+                Best online zoo I’ve met. My son delighted very much ljves to
+                watch... gouillas. Online zoo is one jf the wa ys to instill a
                 love for animals.The best online zoo I’ve met. My son delighted
                 very much ljves to watch gouillas. Online zoo is one jf the ways
                 to instill a love for animals. The best online zoo I’ve met. My
@@ -416,124 +464,231 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__top-row">
-            <div class="footer__column">
-              <a class="footer__logo" href="#">
-                <div class="footer__logo__img">
-                  <img src="assets/icons/logo.svg" alt="logo-icon" />
+      <div class="wrapper">
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__top-row">
+              <div class="footer__column">
+                <a class="footer__logo" href="#">
+                  <div class="footer__logo__img">
+                    <img src="assets/icons/logo.svg" alt="logo-icon" />
+                  </div>
+                  <div class="footer__logo__text">PetStroy online</div>
+                </a>
+                <div class="social-icons social-icons--top-list-640">
+                  <ul class="social-icons__list">
+                    <li class="social-icons__list-item">
+                      <a
+                        class="social-icons__list-item-link"
+                        href="https://ru-ru.facebook.com/"
+                        target="blank"
+                        ><img
+                          class="social-icons__list-item-img"
+                          src="assets/icons/face-book.svg"
+                          alt="facebook"
+                        />
+                      </a>
+                    </li>
+                    <li class="social-icons__list-item">
+                      <a
+                        class="social-icons__list-item-link"
+                        href="https://twitter.com/?lang=ru"
+                        target="blank"
+                        ><img
+                          class="social-icons__list-item-img"
+                          src="assets/icons/twitter.svg"
+                          alt="twitter"
+                        />
+                      </a>
+                    </li>
+                    <li class="social-icons__list-item">
+                      <a
+                        class="social-icons__list-item-link"
+                        href="https://www.instagram.com/"
+                        target="blank"
+                        ><img
+                          src="assets/icons/instagramm.svg"
+                          alt="instagram"
+                        />
+                      </a>
+                    </li>
+                    <li class="social-icons__list-item">
+                      <a
+                        class="social-icons__list-item-link"
+                        href="https://www.youtube.com/"
+                        target="blank"
+                        ><img
+                          class="social-icons__list-item-img"
+                          src="assets/icons/yuo-tube.svg"
+                          alt="you tube"
+                        />
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="footer__logo__text">PetStroy online</div>
-              </a>
+                <a
+                  class="footer__donation-btn--dnone-320px"
+                  href="/online-zoo/pages/donations/index.html"
+                  target="blank"
+                  >donate for volunteers</a
+                >
+              </div>
+              <div class="form">
+                <h3 class="form__title">Subscribe to our news</h3>
+                <form action="">
+                  <input
+                    class="form__input"
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <button class="form__btn" type="submit">Submit</button>
+                </form>
+              </div>
+              <div class="social-icons social-icons--top-list">
+                <ul class="social-icons__list">
+                  <li class="social-icons__list-item">
+                    <a
+                      class="social-icons__list-item-link"
+                      href="https://ru-ru.facebook.com/"
+                      target="blank"
+                      ><img
+                        class="social-icons__list-item-img"
+                        src="assets/icons/face-book.svg"
+                        alt="facebook"
+                      />
+                    </a>
+                  </li>
+                  <li class="social-icons__list-item">
+                    <a
+                      class="social-icons__list-item-link"
+                      href="https://twitter.com/?lang=ru"
+                      target="blank"
+                      ><img
+                        class="social-icons__list-item-img"
+                        src="assets/icons/twitter.svg"
+                        alt="twitter"
+                      />
+                    </a>
+                  </li>
+                  <li class="social-icons__list-item">
+                    <a
+                      class="social-icons__list-item-link"
+                      href="https://www.instagram.com/"
+                      target="blank"
+                      ><img src="assets/icons/instagramm.svg" alt="instagram" />
+                    </a>
+                  </li>
+                  <li class="social-icons__list-item">
+                    <a
+                      class="social-icons__list-item-link"
+                      href="https://www.youtube.com/"
+                      target="blank"
+                      ><img
+                        class="social-icons__list-item-img"
+                        src="assets/icons/yuo-tube.svg"
+                        alt="you tube"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__bottom-row">
               <a
-                class="footer__donation-btn"
+                class="footer__donation-btn--dnone-640"
                 href="/online-zoo/pages/donations/index.html"
                 target="blank"
                 >donate for volunteers</a
               >
-            </div>
-            <div class="form">
-              <h3 class="form__title">Subscribe to our news</h3>
-              <form action="">
-                <input
-                  class="form__input"
-                  type="email"
-                  placeholder="Enter your email"
-                  required
-                />
-                <button class="form__btn" type="submit">Submit</button>
-              </form>
-            </div>
-          </div>
-          <div class="footer__bottom-row">
-            <div class="social-icons">
-              <ul class="social-icons__list">
-                <li class="social-icons__list-item">
-                  <a
-                    class="social-icons__list-item-link"
-                    href="https://ru-ru.facebook.com/"
-                    target="blank"
-                    ><img
-                      class="social-icons__list-item-img"
-                      src="assets/icons/face-book.svg"
-                      alt="facebook"
-                    />
-                    <span class="social-icons__social-icons-name"
-                      >Facebook</span
-                    ></a
-                  >
-                </li>
-                <li class="social-icons__list-item">
-                  <a
-                    class="social-icons__list-item-link"
-                    href="https://twitter.com/?lang=ru"
-                    target="blank"
-                    ><img
-                      class="social-icons__list-item-img"
-                      src="assets/icons/twitter.svg"
-                      alt="twitter"
-                    />
-                    <span class="social-icons__social-icons-name"
-                      >Twitter</span
-                    ></a
-                  >
-                </li>
-                <li class="social-icons__list-item">
-                  <a
-                    class="social-icons__list-item-link"
-                    href="https://www.instagram.com/"
-                    target="blank"
-                    ><img src="assets/icons/instagramm.svg" alt="instagram" />
-                    <span class="social-icons__social-icons-name"
-                      >Instagram</span
-                    ></a
-                  >
-                </li>
-                <li class="social-icons__list-item">
-                  <a
-                    class="social-icons__list-item-link"
-                    href="https://www.youtube.com/"
-                    target="blank"
-                    ><img
-                      class="social-icons__list-item-img"
-                      src="assets/icons/yuo-tube.svg"
-                      alt="you tube"
-                    />
-                    <span class="social-icons__social-icons-name"
-                      >YouTube</span
-                    ></a
-                  >
-                </li>
-              </ul>
-            </div>
-            <nav>
-              <ul class="footer__nav-list">
-                <li class="footer__list-item">
-                  <a href="#">About</a>
-                </li>
-                <li class="footer__list-item">
-                  <a href="/online-zoo/pages/map/index.html" target="blank"
-                    >Map</a
-                  >
-                </li>
-                <li class="footer__list-item">
-                  <a href="/online-zoo/pages/zoos/index.html" target="blank"
-                    >Zoos</a
-                  >
-                </li>
-                <li class="footer__list-item">
-                  <a href="https://t.me/locrun">Contact us</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="copy">
-              <span class="text">Designed by Alisa Samborskaya</span>
-              <span class="text">©RSSchool & ©Yem Digital 2021</span>
+              <div class="social-icons">
+                <ul class="social-icons__list">
+                  <li class="social-icons__list-item">
+                    <a
+                      class="social-icons__list-item-link"
+                      href="https://ru-ru.facebook.com/"
+                      target="blank"
+                      ><img
+                        class="social-icons__list-item-img"
+                        src="assets/icons/face-book.svg"
+                        alt="facebook"
+                      />
+                      <span class="social-icons__social-icons-name"
+                        >Facebook</span
+                      ></a
+                    >
+                  </li>
+                  <li class="social-icons__list-item">
+                    <a
+                      class="social-icons__list-item-link"
+                      href="https://twitter.com/?lang=ru"
+                      target="blank"
+                      ><img
+                        class="social-icons__list-item-img"
+                        src="assets/icons/twitter.svg"
+                        alt="twitter"
+                      />
+                      <span class="social-icons__social-icons-name"
+                        >Twitter</span
+                      ></a
+                    >
+                  </li>
+                  <li class="social-icons__list-item">
+                    <a
+                      class="social-icons__list-item-link"
+                      href="https://www.instagram.com/"
+                      target="blank"
+                      ><img src="assets/icons/instagramm.svg" alt="instagram" />
+                      <span class="social-icons__social-icons-name"
+                        >Instagram</span
+                      ></a
+                    >
+                  </li>
+                  <li class="social-icons__list-item">
+                    <a
+                      class="social-icons__list-item-link"
+                      href="https://www.youtube.com/"
+                      target="blank"
+                      ><img
+                        class="social-icons__list-item-img"
+                        src="assets/icons/yuo-tube.svg"
+                        alt="you tube"
+                      />
+                      <span class="social-icons__social-icons-name"
+                        >YouTube</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__list-item">
+                    <a href="#">About</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="/online-zoo/pages/map/index.html" target="blank"
+                      >Map</a
+                    >
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="/online-zoo/pages/zoos/index.html" target="blank"
+                      >Zoos</a
+                    >
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="https://t.me/locrun">Contact us</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="copy">
+                <span class="text">Designed by Alisa Samborskaya</span>
+                <span class="text">©RSSchool & ©Yem Digital 2021</span>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </main>
     <script src="main.js"></script>
   </body>
