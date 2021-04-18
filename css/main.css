@@ -142,7 +142,7 @@ h3 {
   cursor: default;
 }
 .header:after {
-  content: url("/assets/icons/burger-menu.svg");
+  content: url("../assets/icons/burger-menu.svg");
   display: block;
   position: absolute;
   right: 10px;
@@ -841,7 +841,7 @@ h3 {
   background: #f9804b;
   width: 62px;
   height: 62px;
-  background-image: url("/assets/icons/left.svg");
+  background-image: url("../assets/icons/left.svg");
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
@@ -875,7 +875,7 @@ h3 {
   background: #f9804b;
   width: 62px;
   height: 62px;
-  background-image: url("/assets/icons/right.svg");
+  background-image: url("../assets/icons/right.svg");
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
