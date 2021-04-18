@@ -588,13 +588,13 @@ h3 {
 .flower {
   background-repeat: no-repeat;
   background-position: top 13% right -4px;
-  background-image: url("/assets/images/little-flower.png");
+  background-image: url("../assets/images/little-flower.png");
 }
 @media (min-width: 640px) {
   .flower {
     ackground-repeat: no-repeat;
     background-position: top 12% right -4px;
-    background-image: url("/assets/images/tablet-flower.png");
+    background-image: url("../assets/images/tablet-flower.png");
   }
 }
 @media (min-width: 1200px) {
@@ -608,9 +608,9 @@ h3 {
     background-position: top 10px right;
   }
 }
-@media (min-width: 1600px) and (min-width: 1500px) {
+@media (min-width: 1600px) and (min-width: 1600px) {
   .flower {
-    background-image: url("/assets/images/flower-foto.png");
+    background-image: url("../assets/images/flower-foto.png");
   }
 }
 .animal-cards {
@@ -789,16 +789,16 @@ h3 {
 .ornamental-plant {
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-image: url("/assets/images/little-strelitzia.png");
+  background-image: url("../assets/images/little-strelitzia.png");
 }
 @media (min-width: 640px) {
   .ornamental-plant {
-    background-image: url("/assets/images/middle-strelitzia.png");
+    background-image: url("../assets/images/middle-strelitzia.png");
   }
 }
 @media (min-width: 1200px) {
   .ornamental-plant {
-    background-image: url("/assets/images/small-strelitzia.png");
+    background-image: url("../assets/images/small-strelitzia.png");
   }
 }
 @media (min-width: 1600px) {
@@ -809,17 +809,17 @@ h3 {
 .palm {
   background-repeat: no-repeat;
   background-position: bottom left;
-  background-image: url("/assets/images/little-palm.png");
+  background-image: url("../assets/images/little-palm.png");
 }
 @media (min-width: 640px) {
   .palm {
-    background-image: url("/assets/images/middle-palm.png");
+    background-image: url("../assets/images/middle-palm.png");
     padding-bottom: 100px;
   }
 }
 @media (min-width: 1200px) {
   .palm {
-    background-image: url("/assets/images/small-palm.png");
+    background-image: url("../assets/images/small-palm.png");
     padding-bottom: 140px;
   }
 }
@@ -1186,7 +1186,7 @@ h3 {
 }
 @media (min-width: 640px) {
   .feed-animals__icons--zoo:after {
-    content: url("/assets/icons/arrow-x.svg");
+    content: url("../assets/icons/arrow-x.svg");
     display: block;
     position: absolute;
     right: 92%;
@@ -1207,7 +1207,7 @@ h3 {
 }
 @media (min-width: 640px) {
   .feed-animals__icons--monkey:after {
-    content: url("/assets/icons/arrow-x.svg");
+    content: url("../assets/icons/arrow-x.svg");
     display: block;
     position: absolute;
     right: 92%;
@@ -1477,23 +1477,23 @@ h3 {
 .leav-photo {
   background-repeat: no-repeat;
   background-position: right bottom -6%;
-  background-image: url("/assets/images/little-leav.png");
+  background-image: url("../assets/images/little-leav.png");
 }
 @media (min-width: 640px) {
   .leav-photo {
     background-position: right bottom -15%;
-    background-image: url("/assets/images/middle-leav.png");
+    background-image: url("../assets/images/middle-leav.png");
   }
 }
 @media (min-width: 1200px) {
   .leav-photo {
     background-position: right bottom -20%;
-    background-image: url("/assets/images/small-leav.png");
+    background-image: url("../assets/images/small-leav.png");
   }
 }
 @media (min-width: 1600px) {
   .leav-photo {
-    background-image: url("/assets/images/leav-foto.png");
+    background-image: url("../assets/images/leav-foto.png");
   }
 }
 .line-csroll {
