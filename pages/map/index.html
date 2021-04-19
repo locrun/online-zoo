@@ -4,13 +4,351 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Map</title>
   </head>
   <body>
-    <main>
-      <div class="contianer">
-        <h1>MAP</h1>
-      </div>
+    <!--// Header -->
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="flex-box">
+            <a class="logo" href="#">
+              <div class="logo__img">
+                <img src="assets/icons/logo.svg" alt="logo icon" />
+              </div>
+              <h1 class="logo__text">PetStroy online</h1>
+            </a>
+            <nav>
+              <ul class="nav">
+                <li class="nav__item">
+                  <a class="nav__item-link" href="#">About</a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="nav__item-link active"
+                    href="../map/index.html"
+                    target="blank"
+                    >Map</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="nav__item-link"
+                    href="../zoos/index.html"
+                    target="blank"
+                    >Zoos</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="nav__item-link" href="#">Contact us</a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="nav__item-link"
+                    href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+                    target="blank"
+                    >Designed by @</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- Header //-->
+    <main class="main">
+      <section class="map-wrapper">
+        <div class="location">
+          <div class="location-panda">
+            <div class="location__country-name">China</div>
+            <div class="location__panda-habitat">
+              <img id="panda" src="../map/assets/icons/panda.svg" alt="panda" />
+            </div>
+            <div class="location__panda-habitat-parent">
+              <img src="../map/assets/icons/parent-panda.svg" alt="panda" />
+            </div>
+            <div class="tooltip panda">
+              <p class="tooltip__name">Giant Panda,</p>
+              <p class="tooltip__location">China</p>
+              <a class="tooltip__btn" href="#">Whatch online</a>
+            </div>
+          </div>
+          <div class="location-gorillas">
+            <div class="location__country-name--congo">Congo</div>
+            <div class="location__gorrilas-habitat">
+              <img src="../map/assets/icons/gorillas.svg" alt="gorillas" />
+            </div>
+            <div class="tooltip gorillas">
+              <p class="tooltip__name">Eastern Gorilla,</p>
+              <p class="tooltip__location">Congo</p>
+              <a class="tooltip__btn" href="#">Whatch online</a>
+            </div>
+          </div>
+          <div class="location-lonely-crocodile">
+            <div class="location__country-name--florida">Florida</div>
+            <div class="location__crocodile-habitat">
+              <img
+                src="../map/assets/icons/lonely-crocodile.svg"
+                alt="lonely-crocodile"
+              />
+            </div>
+            <div class="tooltip alligator">
+              <p class="tooltip__name">Lonely Crocodile,</p>
+              <p class="tooltip__location">Florida, USA</p>
+              <a class="tooltip__btn" href="#">Whatch online</a>
+            </div>
+          </div>
+          <div class="location-eagle">
+            <div class="location__country-name--USA">
+              United States
+              <p class="location__country-sity">Los Angeles</p>
+            </div>
+            <div class="location__eagle-habitat">
+              <img
+                class="eagle-male"
+                src="../map/assets/icons/eagle1.svg"
+                alt="eagle"
+              />
+              <img
+                class="eagle-female"
+                src="../map/assets/icons/eagle2.svg"
+                alt="eagle"
+              />
+            </div>
+            <div class="tooltip eagle">
+              <p class="tooltip__name">Bald Eagle</p>
+              <p class="tooltip__location">United States</p>
+              <a class="tooltip__btn" href="#">Whatch online</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- Footer -->
+    <div class="wrapper">
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top-row">
+            <div class="footer__column">
+              <a class="footer__logo" href="#">
+                <div class="footer__logo__img">
+                  <img src="assets/icons/logo.svg" alt="logo-icon" />
+                </div>
+                <div class="footer__logo__text">PetStroy online</div>
+              </a>
+              <div class="social-icons social-icons--top-list-640">
+                <ul class="social-icons__list">
+                  <li class="social-icons__list-item">
+                    <a
+                      class="social-icons__list-item-link"
+                      href="https://ru-ru.facebook.com/"
+                      target="blank"
+                      ><img
+                        class="social-icons__list-item-img"
+                        src="assets/icons/face-book.svg"
+                        alt="facebook"
+                      />
+                    </a>
+                  </li>
+                  <li class="social-icons__list-item">
+                    <a
+                      class="social-icons__list-item-link"
+                      href="https://twitter.com/?lang=ru"
+                      target="blank"
+                      ><img
+                        class="social-icons__list-item-img"
+                        src="assets/icons/twitter.svg"
+                        alt="twitter"
+                      />
+                    </a>
+                  </li>
+                  <li class="social-icons__list-item">
+                    <a
+                      class="social-icons__list-item-link"
+                      href="https://www.instagram.com/"
+                      target="blank"
+                      ><img src="assets/icons/instagramm.svg" alt="instagram" />
+                    </a>
+                  </li>
+                  <li class="social-icons__list-item">
+                    <a
+                      class="social-icons__list-item-link"
+                      href="https://www.youtube.com/"
+                      target="blank"
+                      ><img
+                        class="social-icons__list-item-img"
+                        src="assets/icons/yuo-tube.svg"
+                        alt="you tube"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="footer__donation-btn--dnone-320px"
+                href="/online-zoo/pages/donations/index.html"
+                target="blank"
+                >donate for volunteers</a
+              >
+            </div>
+            <div class="form">
+              <h3 class="form__title">Subscribe to our news</h3>
+              <form action="">
+                <input
+                  class="form__input"
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button class="form__btn" type="submit">Submit</button>
+              </form>
+            </div>
+            <div class="social-icons social-icons--top-list">
+              <ul class="social-icons__list">
+                <li class="social-icons__list-item">
+                  <a
+                    class="social-icons__list-item-link"
+                    href="https://ru-ru.facebook.com/"
+                    target="blank"
+                    ><img
+                      class="social-icons__list-item-img"
+                      src="assets/icons/face-book.svg"
+                      alt="facebook"
+                    />
+                  </a>
+                </li>
+                <li class="social-icons__list-item">
+                  <a
+                    class="social-icons__list-item-link"
+                    href="https://twitter.com/?lang=ru"
+                    target="blank"
+                    ><img
+                      class="social-icons__list-item-img"
+                      src="assets/icons/twitter.svg"
+                      alt="twitter"
+                    />
+                  </a>
+                </li>
+                <li class="social-icons__list-item">
+                  <a
+                    class="social-icons__list-item-link"
+                    href="https://www.instagram.com/"
+                    target="blank"
+                    ><img src="assets/icons/instagramm.svg" alt="instagram" />
+                  </a>
+                </li>
+                <li class="social-icons__list-item">
+                  <a
+                    class="social-icons__list-item-link"
+                    href="https://www.youtube.com/"
+                    target="blank"
+                    ><img
+                      class="social-icons__list-item-img"
+                      src="assets/icons/yuo-tube.svg"
+                      alt="you tube"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom-row">
+            <a
+              class="footer__donation-btn--dnone-640"
+              href="/online-zoo/pages/donations/index.html"
+              target="blank"
+              >donate for volunteers</a
+            >
+            <div class="social-icons">
+              <ul class="social-icons__list">
+                <li class="social-icons__list-item">
+                  <a
+                    class="social-icons__list-item-link"
+                    href="https://ru-ru.facebook.com/"
+                    target="blank"
+                    ><img
+                      class="social-icons__list-item-img"
+                      src="assets/icons/face-book.svg"
+                      alt="facebook"
+                    />
+                    <span class="social-icons__social-icons-name"
+                      >Facebook</span
+                    ></a
+                  >
+                </li>
+                <li class="social-icons__list-item">
+                  <a
+                    class="social-icons__list-item-link"
+                    href="https://twitter.com/?lang=ru"
+                    target="blank"
+                    ><img
+                      class="social-icons__list-item-img"
+                      src="assets/icons/twitter.svg"
+                      alt="twitter"
+                    />
+                    <span class="social-icons__social-icons-name"
+                      >Twitter</span
+                    ></a
+                  >
+                </li>
+                <li class="social-icons__list-item">
+                  <a
+                    class="social-icons__list-item-link"
+                    href="https://www.instagram.com/"
+                    target="blank"
+                    ><img src="assets/icons/instagramm.svg" alt="instagram" />
+                    <span class="social-icons__social-icons-name"
+                      >Instagram</span
+                    ></a
+                  >
+                </li>
+                <li class="social-icons__list-item">
+                  <a
+                    class="social-icons__list-item-link"
+                    href="https://www.youtube.com/"
+                    target="blank"
+                    ><img
+                      class="social-icons__list-item-img"
+                      src="assets/icons/yuo-tube.svg"
+                      alt="you tube"
+                    />
+                    <span class="social-icons__social-icons-name"
+                      >YouTube</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__list-item">
+                  <a href="#">About</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="/online-zoo/pages/map/index.html" target="blank"
+                    >Map</a
+                  >
+                </li>
+                <li class="footer__list-item">
+                  <a href="/online-zoo/pages/zoos/index.html" target="blank"
+                    >Zoos</a
+                  >
+                </li>
+                <li class="footer__list-item">
+                  <a href="https://t.me/locrun">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="copy">
+              <span class="text">Designed by Alisa Samborskaya</span>
+              <span class="text">©RSSchool & ©Yem Digital 2021</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
