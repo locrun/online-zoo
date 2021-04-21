@@ -157,7 +157,7 @@ img {
   margin: 0 auto;
 }
 .areal-icon-bg {
-  background-image: url(/pages/map/assets/icons/location-icons.svg);
+  background-image: url(../assets/icons/location-icons.svg);
   background-position: bottom 80px left 9px;
   background-repeat: no-repeat;
   background-size: 86.5%;
@@ -186,7 +186,7 @@ img {
   height: 267px;
   margin: 0 auto;
   position: relative;
-  background: url("/pages/map/assets/images/map.svg") right 50% bottom 50% no-repeat, #eaf7fe;
+  background: url("../assets/images/map.svg") right 50% bottom 50% no-repeat, #eaf7fe;
   background-size: cover;
 }
 @media (min-width: 640px) {
