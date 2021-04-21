@@ -12,6 +12,10 @@ h2,
 h3 {
   margin: 0;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .wrapper {
   background: #111115;
 }
@@ -150,114 +154,223 @@ h3 {
 }
 .map-wrapper {
   background-color: #eaf7fe;
-  max-width: 1083px;
   margin: 0 auto;
 }
-.location {
-  width: 1083px;
-  height: 940px;
-  background: url("../assets/icons/location-icons.svg") right 60% bottom 42.5% no-repeat, url("../assets/images/map.svg") right 50% bottom 50% no-repeat, #eaf7fe;
+.areal-icon-bg {
+  background-image: url(/pages/map/assets/icons/location-icons.svg);
+  background-position: bottom 80px left 9px;
+  background-repeat: no-repeat;
+  background-size: 86.5%;
+  height: 100%;
+}
+@media (min-width: 640px) {
+  .areal-icon-bg {
+    background-position: bottom 120px left 75px;
+    background-size: 68.5%;
+  }
+}
+@media (min-width: 1200px) {
+  .areal-icon-bg {
+    background-position: bottom 190px left 118px;
+    background-size: 68.5%;
+  }
+}
+@media (min-width: 1600px) {
+  .areal-icon-bg {
+    background-position: bottom 220px left 136px;
+    background-size: 68.5%;
+  }
+}
+.home {
+  max-width: 320px;
+  height: 267px;
+  margin: 0 auto;
   position: relative;
+  background: url("/pages/map/assets/images/map.svg") right 50% bottom 50% no-repeat, #eaf7fe;
+  background-size: cover;
 }
-.location__panda-habitat {
+@media (min-width: 640px) {
+  .home {
+    max-width: 595px;
+    height: 390px;
+  }
+}
+@media (min-width: 1200px) {
+  .home {
+    max-width: 937px;
+    height: 618px;
+  }
+}
+@media (min-width: 1600px) {
+  .home {
+    max-width: 1083px;
+    height: 714px;
+  }
+}
+.home__panda {
   position: absolute;
-  right: 21.3%;
-  bottom: 47.5%;
-  cursor: pointer;
+  right: 12%;
+  bottom: 35%;
+  width: 200px;
+  height: 200px;
 }
-.location__panda-habitat img {
+.home .panda {
+  position: absolute;
+  bottom: -40%;
+  left: 20%;
+}
+.home__panda:hover .tooltip {
+  opacity: 1;
+  transition: 0.5s all;
+}
+.home__country {
+  position: absolute;
+  left: 7%;
+  top: 35%;
+  font-family: "Verdana";
+  color: #4f5352;
+}
+.home__panda-img {
+  position: absolute;
+  top: 14.5%;
+  right: 50%;
+  display: inline-block;
+  cursor: pointer;
   width: 37px;
   height: 49px;
 }
-.location__gorrilas-habitat {
+.home__panda-parent-img {
+  position: absolute;
+  right: 50%;
+  bottom: 32%;
+  display: inline-block;
+  cursor: pointer;
+  width: 46px;
+  height: 42px;
+}
+.home__gorillas {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 23.5%;
+  right: 37%;
+}
+.home .gorillas {
+  position: absolute;
+  bottom: -40%;
+  left: 20%;
+}
+.home__gorillas:hover .tooltip {
+  opacity: 1;
+  transition: 0.5s all;
+}
+.home__country--congo {
+  position: absolute;
+  right: 33.6%;
+  bottom: 54%;
+  font-family: "Verdana";
+  color: #4f5352;
+}
+.home__gorrilas-img {
   position: absolute;
   right: 45.4%;
   bottom: 30%;
   cursor: pointer;
 }
-.location__gorrilas-habitat img {
+.home__gorrilas-img img {
   width: 50px;
   height: 40px;
 }
-.location__crocodile-habitat {
+.home__lonely-crocodile {
+  position: absolute;
+  left: 24%;
+  bottom: 32%;
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+  transition: 0.3s all;
+}
+.home .crocodile {
+  position: absolute;
+  bottom: -35%;
+  left: 0;
+}
+.home__lonely-crocodile:hover .tooltip {
+  opacity: 1;
+  transition: 0.5s all;
+}
+.home__country--florida {
+  position: absolute;
+  left: 15%;
+  top: 25%;
+  font-family: "Verdana";
+  color: #4f5352;
+}
+.home__crocodile-img {
   position: absolute;
   right: 70.5%;
   bottom: 41%;
   cursor: pointer;
 }
-.location__crocodile-habitat img {
+.home__crocodile-img img {
   width: 72px;
   height: 20px;
 }
-.location .eagle-male {
+.home__eagle {
+  width: 200px;
+  height: 200px;
   position: absolute;
-  bottom: 44.4%;
-  left: 8.4%;
+  top: 45%;
+  left: 5%;
+  opacity: 1;
+  transition: 0.3s all;
+}
+.home__eagle:hover .tooltip {
+  opacity: 1;
+  transition: 0.5s all;
+}
+.home .eagle {
+  position: absolute;
+  bottom: -35%;
+  left: 0;
+}
+.home .eagle-male {
+  position: absolute;
+  bottom: 50%;
+  left: 18%;
+  cursor: pointer;
   width: 44px;
   height: 44px;
-  cursor: pointer;
 }
-.location .eagle-female {
+.home .eagle-female {
   position: absolute;
   bottom: 43%;
-  left: 11.6%;
+  left: 35%;
   width: 50px;
   height: 22px;
   cursor: pointer;
 }
-.location__panda-habitat-parent {
+.home__country--USA {
   position: absolute;
-  width: 37px;
-  height: 49px;
-  right: 21.9%;
-  bottom: 41%;
-  cursor: pointer;
-}
-.location__panda-habitat-parent img {
-  width: 46px;
-  height: 42px;
-}
-.location__country-name {
-  position: absolute;
-  right: 25.5%;
-  bottom: 46.5%;
-  font-family: "Verdana";
-  color: #4f5352;
-}
-.location__country-name--congo {
-  position: absolute;
-  right: 43.2%;
-  bottom: 35%;
-  font-family: "Verdana";
-  color: #4f5352;
-}
-.location__country-name--florida {
-  position: absolute;
-  right: 69%;
-  bottom: 45%;
-  font-family: "Verdana";
-  color: #4f5352;
-}
-.location__country-name--USA {
-  position: absolute;
-  left: 13.5%;
-  bottom: 44.5%;
+  left: 45.5%;
+  top: 14%;
   font-family: "Verdana";
   color: #4f5352;
   letter-spacing: -0.7px;
 }
-.location__country-name--USA .location__country-sity {
+.home__sity {
   padding-left: 17px;
 }
 .tooltip {
+  position: absolute;
   display: inline-block;
   padding: 15px 11px;
   padding-bottom: 25px;
   background-color: #fff;
   border: 2px solid #000;
   border-radius: 5px;
-  position: relative;
-  margin-left: 200px;
+  opacity: 0;
+  transition: 0.5s all;
 }
 .tooltip__name {
   font-family: "Roboto-Regular";
@@ -266,7 +379,7 @@ h3 {
   margin-top: 0;
   margin-bottom: 5px;
 }
-.tooltip__location {
+.tooltip__home {
   font-family: "Roboto-Regular";
   font-weight: 400;
   font-size: 16px;
@@ -282,50 +395,6 @@ h3 {
   background: #f1f3f2;
   border-radius: 5px;
   padding: 8px 16px;
-}
-.panda {
-  position: absolute;
-  bottom: 26%;
-  right: 13%;
-  opacity: 0;
-  transition: 0.3s all;
-}
-.gorillas {
-  position: absolute;
-  bottom: 15%;
-  right: 37%;
-  opacity: 0;
-  transition: 0.3s all;
-}
-.alligator {
-  position: absolute;
-  bottom: 25%;
-  left: 4%;
-  opacity: 0;
-  transition: 0.3s all;
-}
-.eagle {
-  position: absolute;
-  bottom: 28%;
-  left: -15%;
-  opacity: 0;
-  transition: 0.3s all;
-}
-.location-panda:hover .tooltip {
-  opacity: 1;
-  transition: 0.3s all;
-}
-.location-gorillas:hover .tooltip {
-  opacity: 1;
-  transition: 0.3s all;
-}
-.location-lonely-crocodile:hover .tooltip {
-  opacity: 1;
-  transition: 0.3s all;
-}
-.location-eagle:hover .tooltip {
-  opacity: 1;
-  transition: 0.3s all;
 }
 .footer {
   padding-top: 45px;

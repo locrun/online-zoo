@@ -3,32 +3,132 @@
 }
 .map-wrapper {
   background-color: #eaf7fe;
-  max-width: 1083px;
   margin: 0 auto;
 }
+.areal-icon-bg {
+  background-image: url(/pages/map/assets/icons/location-icons.svg);
+  background-position: bottom 80px left 9px;
+  background-repeat: no-repeat;
+  background-size: 86.5%;
+  height: 100%;
 
-.location {
-  width: 1083px;
-  height: 940px;
+  @media (min-width: 640px) {
+    background-position: bottom 120px left 75px;
+    background-size: 68.5%;
+  }
+  @media (min-width: 1200px) {
+    background-position: bottom 190px left 118px;
+    background-size: 68.5%;
+  }
+  @media (min-width: 1600px) {
+    background-position: bottom 220px left 136px;
+    background-size: 68.5%;
+    //background-size: 100%;
+  }
+}
+
+.home {
+  max-width: 320px;
+  height: 267px;
+  margin: 0 auto;
   position: relative;
-  background: url("../assets/icons/location-icons.svg") right 60% bottom 42.5%
+  background: url("/pages/map/assets/images/map.svg") right 50% bottom 50%
       no-repeat,
-    url("../assets/images/map.svg") right 50% bottom 50% no-repeat, #eaf7fe;
-  position: relative;
+    #eaf7fe;
+  background-size: cover;
 
-  &__panda-habitat {
+  @media (min-width: 640px) {
+    max-width: 595px;
+    height: 390px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 937px;
+    height: 618px;
+  }
+
+  @media (min-width: 1600px) {
+    max-width: 1083px;
+    height: 714px;
+  }
+
+  &__panda {
     position: absolute;
-    right: 21.3%;
-    bottom: 47.5%;
-    cursor: pointer;
+    right: 12%;
+    bottom: 35%;
+    width: 200px;
+    height: 200px;
+  }
 
-    img {
-      width: 37px;
-      height: 49px;
+  .panda {
+    position: absolute;
+    bottom: -40%;
+    left: 20%;
+  }
+  &__panda:hover {
+    .tooltip {
+      opacity: 1;
+      transition: 0.5s all;
     }
   }
 
-  &__gorrilas-habitat {
+  &__country {
+    position: absolute;
+    left: 7%;
+    top: 35%;
+    font-family: "Verdana";
+    color: #4f5352;
+  }
+
+  &__panda-img {
+    position: absolute;
+    top: 14.5%;
+    right: 50%;
+    display: inline-block;
+    cursor: pointer;
+    width: 37px;
+    height: 49px;
+  }
+
+  &__panda-parent-img {
+    position: absolute;
+    right: 50%;
+    bottom: 32%;
+    display: inline-block;
+    cursor: pointer;
+    width: 46px;
+    height: 42px;
+  }
+
+  //panda
+
+  &__gorillas {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 23.5%;
+    right: 37%;
+  }
+  .gorillas {
+    position: absolute;
+    bottom: -40%;
+    left: 20%;
+  }
+
+  &__gorillas:hover {
+    .tooltip {
+      opacity: 1;
+      transition: 0.5s all;
+    }
+  }
+  &__country--congo {
+    position: absolute;
+    right: 33.6%;
+    bottom: 54%;
+    font-family: "Verdana";
+    color: #4f5352;
+  }
+
+  &__gorrilas-img {
     position: absolute;
     right: 45.4%;
     bottom: 30%;
@@ -38,7 +138,35 @@
       height: 40px;
     }
   }
-  &__crocodile-habitat {
+
+  &__lonely-crocodile {
+    position: absolute;
+    left: 24%;
+    bottom: 32%;
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    transition: 0.3s all;
+  }
+  .crocodile {
+    position: absolute;
+    bottom: -35%;
+    left: 0;
+  }
+  &__lonely-crocodile:hover {
+    .tooltip {
+      opacity: 1;
+      transition: 0.5s all;
+    }
+  }
+  &__country--florida {
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    font-family: "Verdana";
+    color: #4f5352;
+  }
+  &__crocodile-img {
     position: absolute;
     right: 70.5%;
     bottom: 41%;
@@ -49,81 +177,67 @@
     }
   }
 
+  &__eagle {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    opacity: 1;
+    transition: 0.3s all;
+  }
+  &__eagle:hover {
+    .tooltip {
+      opacity: 1;
+      transition: 0.5s all;
+    }
+  }
+  .eagle {
+    position: absolute;
+    bottom: -35%;
+    left: 0;
+  }
+
   .eagle-male {
     position: absolute;
-    bottom: 44.4%;
-    left: 8.4%;
+    bottom: 50%;
+    left: 18%;
+    cursor: pointer;
     width: 44px;
     height: 44px;
-    cursor: pointer;
   }
   .eagle-female {
     position: absolute;
     bottom: 43%;
-    left: 11.6%;
+    left: 35%;
     width: 50px;
     height: 22px;
     cursor: pointer;
   }
-  &__panda-habitat-parent {
-    position: absolute;
-    width: 37px;
-    height: 49px;
-    right: 21.9%;
-    bottom: 41%;
-    cursor: pointer;
-    img {
-      width: 46px;
-      height: 42px;
-    }
-  }
 
-  &__country-name {
+  &__country--USA {
     position: absolute;
-    right: 25.5%;
-    bottom: 46.5%;
-    font-family: "Verdana";
-    color: #4f5352;
-  }
-
-  &__country-name--congo {
-    position: absolute;
-    right: 43.2%;
-    bottom: 35%;
-    font-family: "Verdana";
-    color: #4f5352;
-  }
-  &__country-name--florida {
-    position: absolute;
-    right: 69%;
-    bottom: 45%;
-    font-family: "Verdana";
-    color: #4f5352;
-  }
-
-  &__country-name--USA {
-    position: absolute;
-    left: 13.5%;
-    bottom: 44.5%;
+    left: 45.5%;
+    top: 14%;
     font-family: "Verdana";
     color: #4f5352;
     letter-spacing: -0.7px;
-
-    .location__country-sity {
-      padding-left: 17px;
-    }
+  }
+  &__sity {
+    padding-left: 17px;
   }
 }
 
 .tooltip {
+  position: absolute;
   display: inline-block;
   padding: 15px 11px;
   padding-bottom: 25px;
   background-color: #fff;
   border: 2px solid #000;
   border-radius: 5px;
-  position: relative;
-  margin-left: 200px;
+  opacity: 0;
+  transition: 0.5s all;
 
   &__name {
     font-family: "Roboto-Regular";
@@ -132,7 +246,7 @@
     margin-top: 0;
     margin-bottom: 5px;
   }
-  &__location {
+  &__home {
     font-family: "Roboto-Regular";
     font-weight: 400;
     font-size: 16px;
@@ -148,59 +262,5 @@
     background: #f1f3f2;
     border-radius: 5px;
     padding: 8px 16px;
-  }
-}
-
-.panda {
-  position: absolute;
-  bottom: 26%;
-  right: 13%;
-  opacity: 0;
-  transition: 0.3s all;
-}
-.gorillas {
-  position: absolute;
-  bottom: 15%;
-  right: 37%;
-  opacity: 0;
-  transition: 0.3s all;
-}
-.alligator {
-  position: absolute;
-  bottom: 25%;
-  left: 4%;
-  opacity: 0;
-  transition: 0.3s all;
-}
-.eagle {
-  position: absolute;
-  bottom: 28%;
-  left: -15%;
-  opacity: 0;
-  transition: 0.3s all;
-}
-
-.location-panda:hover {
-  .tooltip {
-    opacity: 1;
-    transition: 0.3s all;
-  }
-}
-.location-gorillas:hover {
-  .tooltip {
-    opacity: 1;
-    transition: 0.3s all;
-  }
-}
-.location-lonely-crocodile:hover {
-  .tooltip {
-    opacity: 1;
-    transition: 0.3s all;
-  }
-}
-.location-eagle:hover {
-  .tooltip {
-    opacity: 1;
-    transition: 0.3s all;
   }
 }
