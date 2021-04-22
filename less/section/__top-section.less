@@ -29,8 +29,6 @@
   .flex-wrapper {
     display: flex;
     justify-content: flex-end;
-    position: relative;
-    z-index: 1;
 
     @media (min-width: 640px) {
       display: block;
@@ -39,13 +37,18 @@
     @media (min-width: 1200px) {
       display: flex;
       justify-content: flex-end;
-      position: relative;
-      z-index: 1;
     }
   }
 
   &__content {
+    position: relative;
+    @media (min-width: 640px) {
+      max-width: 600px;
+      margin: 0 auto;
+    }
     @media (min-width: 1200px) {
+      max-width: 940px;
+      margin: 0 auto;
       text-align: center;
       margin-right: 85px;
     }
@@ -57,6 +60,7 @@
   &__text {
     max-width: 130px;
     float: right;
+    position: relative;
     @media (min-width: 640px) {
       max-width: 255px;
     }
@@ -173,26 +177,25 @@
   }
 }
 
-.bg-orange {
+.orange-circle {
   width: 120px;
   height: 120px;
   position: absolute;
   top: -20px;
   right: 28px;
-  z-index: -1;
 
   @media (min-width: 640px) {
     width: 237px;
     height: 237px;
     top: -35px;
-    right: 60px;
+    right: 56px;
   }
 
   @media (min-width: 1200px) {
     width: 367px;
     height: 367px;
     top: -36px;
-    right: 168px;
+    right: 85px;
   }
   @media (min-width: 1600px) {
     width: 465px;
