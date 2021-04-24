@@ -16,7 +16,22 @@ h2,
 h3 {
   margin: 0;
 }
-.wrapper {
+.header-wrapper {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  height: 40px;
+}
+@media (min-width: 1200px) {
+  .header-wrapper {
+    position: static;
+    height: auto;
+  }
+}
+.footer-wrapper {
   background: #111115;
 }
 .container {
@@ -43,12 +58,22 @@ h3 {
   display: none;
 }
 .header {
-  background-color: #111115;
+  background-color: black;
   padding-top: 5px;
   padding-bottom: 5px;
   position: relative;
   max-width: 600px;
   margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+@media (min-width: 1200px) {
+  .header {
+    position: static;
+  }
 }
 .header .container {
   padding: 0 10px;
@@ -163,65 +188,80 @@ h3 {
   display: flex;
   align-items: center;
 }
-.top-section {
-  background-color: #000;
+.watch-online {
   background-image: url("../assets/images/bg.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom 60% left 0;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-@media (min-width: 460px) {
-  .top-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+@media (min-width: 450px) {
+  .watch-online {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
-@media (min-width: 600px) {
-  .top-section {
-    padding-top: 50px;
-    padding-bottom: 40px;
+@media (min-width: 640px) {
+  .watch-online {
+    padding-top: 60px;
+    padding-bottom: 45px;
+    background-size: cover;
+  }
+}
+@media (min-width: 820px) {
+  .watch-online {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media (min-width: 960px) {
+  .watch-online {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 @media (min-width: 1200px) {
-  .top-section {
+  .watch-online {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 }
 @media (min-width: 1600px) {
-  .top-section {
+  .watch-online {
     padding-top: 90px;
     padding-bottom: 100px;
+    background-position: bottom 20% left 0;
+    background-size: 100%;
   }
 }
-.top-section .flex-wrapper {
+.watch-online .flex-wrapper {
   display: flex;
   justify-content: flex-end;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 @media (min-width: 640px) {
-  .top-section .flex-wrapper {
+  .watch-online .flex-wrapper {
     display: block;
+    padding: 0;
   }
 }
 @media (min-width: 1200px) {
-  .top-section .flex-wrapper {
+  .watch-online .flex-wrapper {
     display: flex;
     justify-content: flex-end;
   }
 }
-.top-section__content {
+.watch-online__content {
   position: relative;
 }
 @media (min-width: 640px) {
-  .top-section__content {
+  .watch-online__content {
     max-width: 600px;
     margin: 0 auto;
   }
 }
 @media (min-width: 1200px) {
-  .top-section__content {
+  .watch-online__content {
     max-width: 940px;
     margin: 0 auto;
     text-align: center;
@@ -229,35 +269,37 @@ h3 {
   }
 }
 @media (min-width: 1600px) {
-  .top-section__content {
+  .watch-online__content {
     margin-right: 0;
   }
 }
-.top-section__text {
+.watch-online__text {
   max-width: 130px;
   float: right;
   position: relative;
 }
 @media (min-width: 640px) {
-  .top-section__text {
+  .watch-online__text {
     max-width: 255px;
+    margin-top: 30px;
   }
 }
 @media (min-width: 1200px) {
-  .top-section__text {
+  .watch-online__text {
     max-width: 400px;
     height: 400px;
     float: none;
+    margin-top: 0;
   }
 }
 @media (min-width: 1600px) {
-  .top-section__text {
+  .watch-online__text {
     max-width: 500px;
     height: 400px;
     float: none;
   }
 }
-.top-section__text-title {
+.watch-online__text-title {
   font-family: "Roboto-Bold";
   font-size: 28px;
   line-height: 21px;
@@ -266,7 +308,7 @@ h3 {
   text-align: center;
 }
 @media (min-width: 640px) {
-  .top-section__text-title {
+  .watch-online__text-title {
     font-family: "Roboto-Bold";
     font-weight: 700;
     fonst-style: normal;
@@ -275,7 +317,7 @@ h3 {
   }
 }
 @media (min-width: 1200px) {
-  .top-section__text-title {
+  .watch-online__text-title {
     font-family: "Roboto-Bold";
     font-weight: 700;
     fonst-style: normal;
@@ -284,7 +326,7 @@ h3 {
   }
 }
 @media (min-width: 1600px) {
-  .top-section__text-title {
+  .watch-online__text-title {
     font-family: "Roboto-Bold";
     font-size: 106.5px;
     line-height: 79px;
@@ -293,7 +335,7 @@ h3 {
     text-align: center;
   }
 }
-.top-section .important-text {
+.watch-online .important-text {
   font-family: "Roboto-Bold";
   font-size: 28px;
   line-height: 21px;
@@ -302,7 +344,7 @@ h3 {
   text-align: center;
 }
 @media (min-width: 640px) {
-  .top-section .important-text {
+  .watch-online .important-text {
     font-family: "Roboto-Bold";
     font-weight: 700;
     fonst-style: normal;
@@ -312,7 +354,7 @@ h3 {
   }
 }
 @media (min-width: 1200px) {
-  .top-section .important-text {
+  .watch-online .important-text {
     font-family: "Roboto-Bold";
     font-weight: 700;
     fonst-style: normal;
@@ -322,7 +364,7 @@ h3 {
   }
 }
 @media (min-width: 1600px) {
-  .top-section .important-text {
+  .watch-online .important-text {
     font-family: "Roboto-Bold";
     font-size: 106.5px;
     line-height: 0.8;
@@ -332,11 +374,11 @@ h3 {
     text-align: center;
   }
 }
-.top-section__btn {
+.watch-online__btn {
   display: none;
 }
 @media (min-width: 640px) {
-  .top-section__btn {
+  .watch-online__btn {
     font-family: "Roboto-Medium";
     display: inline-block;
     font-weight: 500;
@@ -350,37 +392,37 @@ h3 {
     padding: 20px 0px;
     width: 298px;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 235px;
     transition: all 0.6s ease-out;
   }
 }
 @media (min-width: 1200px) {
-  .top-section__btn {
+  .watch-online__btn {
     margin-top: 0;
   }
 }
 @media (min-width: 1600px) {
-  .top-section__btn {
+  .watch-online__btn {
     margin-top: 53px;
   }
 }
-.top-section__btn:hover {
+.watch-online__btn:hover {
   background: #4b9200;
   transition: all 0.6s ease-out;
 }
 .orange-circle {
-  width: 120px;
-  height: 120px;
+  width: 119px;
+  height: 119px;
   position: absolute;
-  top: -20px;
+  top: -15px;
   right: 28px;
 }
 @media (min-width: 640px) {
   .orange-circle {
     width: 237px;
     height: 237px;
-    top: -35px;
-    right: 56px;
+    top: 0px;
+    right: 54px;
   }
 }
 @media (min-width: 1200px) {

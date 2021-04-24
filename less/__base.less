@@ -17,7 +17,22 @@ h2,
 h3 {
   margin: 0;
 }
-.wrapper {
+.header-wrapper {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  height: 40px;
+
+  @media (min-width: 1200px) {
+    position: static;
+    height: auto;
+  }
+}
+
+.footer-wrapper {
   background: #111115;
 }
 .container {
